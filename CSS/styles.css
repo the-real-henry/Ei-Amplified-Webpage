@@ -59,9 +59,7 @@ a {
     font-weight: normal;
 }
 
-span.boldlink {
-    font-weight:bold;
-}
+
 
 .link-arrow::after{
     content: '-->';
@@ -70,4 +68,39 @@ span.boldlink {
 
 .link-arrow:hover::after{
     margin-left:10px;
+}
+
+/*This section is dedicated for lists*/
+.list{
+    list-style: none;
+    padding-left: 0; 
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+/*Buttons*/
+.button{
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-primary);
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 10px 40px 10px 40px;
+    border-color: var(--color-primary);
+    border-style: solid;
+    border-width: 3.5px;
+    transition: color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.button:hover{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+span.boldlink {
+    font-weight:bold;
 }
