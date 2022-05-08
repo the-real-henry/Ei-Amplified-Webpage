@@ -104,3 +104,49 @@ a {
 span.boldlink {
     font-weight:bold;
 }
+
+/*Panels (cards) General*/
+/*All of the general settings are here*/
+
+.p3-panel {
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--color-primary);
+    width: 400px;
+    height: 617px;
+}
+
+
+/*Displacement to bottom of the panel*/
+.panelbd {
+    position: relative;
+    top: 60%;
+}
+
+.panel-heading {
+    font-size: 10rem;
+    font-family: Montserrate, sans-serif, Arial;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.panel-body {
+    text-align: center;
+}
+
+.panel-bodytext{
+    font-size: 2.0rem;
+    font-weight: 100;
+    font-family: Montserrate, sans-serif, Arial;
+    color: var(--color-primary);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+/*Panel specific settings for background*/
+.p3-p1 {
+    background-image: url(../Library/Content-Library/image/Page-3/Panel-1bg-tree.png);
+    background-size: 400px 617px;
+}
