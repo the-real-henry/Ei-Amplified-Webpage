@@ -48,26 +48,8 @@ h2{
     }
 }
 
-/*This section is for links*/
 a {
     text-decoration: none;
-}
-
-.link-arrow {
-    color: var(--color-primary);
-    font-size:2.8rem;
-    font-weight: normal;
-}
-
-
-
-.link-arrow::after{
-    content: '-->';
-    transition: margin 0.15s;
-}
-
-.link-arrow:hover::after{
-    margin-left:10px;
 }
 
 /*This section is dedicated for lists*/
@@ -150,3 +132,34 @@ span.boldlink {
     background-image: url(../Library/Content-Library/image/Page-3/Panel-1bg-tree.png);
     background-size: 400px 617px;
 }
+
+.p3-p2 {
+    background-image: url(../Library/Content-Library/image/Page-3/Panel-2-bg-landscape.png);
+    background-size: 400px 617px;
+}
+
+.p3-p3 {
+    background-image: url(../Library/Content-Library/image/Page-3/panel-3bg-flower.png);
+    background-size: 400px 617px;
+}
+
+/*Creating Grids for Layout*/
+.grid {
+    display: grid;
+}
+
+/*Page 3 grid layout*/
+.grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (min-width: 1200px) {
+    .grid--1x3 {
+        width: 90vw;
+    }
+}
+
+.center {
+    margin: auto;
+}
+
