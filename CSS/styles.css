@@ -106,6 +106,12 @@ span.boldlink {
 }
 
 /*Collapsible Content (menu)*/
+
+.collapsible{
+    background-color: rgba(245, 245, 245, 0.9);
+    transition: all 0.3s;
+}
+
 .collapsible__header {
     display: flex;
     position:relative;
@@ -141,10 +147,9 @@ span.boldlink {
     opacity: 1;
 }
 
-.collapsible--expanded .menu {
-    background-color: white;
-}
+.collapsible--expanded .collapsible {
 
+}
 /*Menu CSS*/
 
 .menu {
@@ -159,6 +164,7 @@ span.boldlink {
     margin: 0;
     opacity: 0.7;
     transition: 0.2s;
+    
 }
 .menubar {
     height: 200px;
@@ -179,7 +185,7 @@ span.boldlink {
 }
 
 .menu-item {
-    margin: 1.2rem 0 1.2rem 0;
+    margin: 1.2rem 0 1.2rem 0.9rem;
 }
 .menu-item4 {
     margin-top: 3.5rem;
@@ -206,6 +212,20 @@ span.boldlink {
 .sticky{
     position:fixed;
 
+}
+
+/*Horizontal Scrolling Setting*/
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.main-holder{
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
 }
 
 /*Page 1 block and title construction*/
@@ -262,11 +282,10 @@ span.boldlink {
     height: 617px;
     width: 95%;
     border: 4px solid var(--color-primary);
-    margin: 3rem 2.5% 3rem 2.5%;
+    margin: 5.5rem 2.5% 3rem 2.5%;
     background-image: url(../Library/Content-Library/image/Page-2/bg-ink.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position: 18% 0%;
+    background-size: 1585px;
 }
 .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -297,14 +316,20 @@ span.boldlink {
     margin: 0;
     text-align: center;
     font-weight: bold;
+    transition: all 0.3s;
+}
+.p2num:hover {
+    font-size: 21rem;
 }
 .p2bottombox {
     width: 60%;
     margin: auto;
+    transition: all 300ms;
 }
+
 .p2element{
     float: left;
-    height: 12rem;
+    height: 10rem;
     margin-right: 2rem;
 }
 .p2text{
@@ -312,22 +337,35 @@ span.boldlink {
     font-weight: 300;
     color: var(--color-primary);
     margin: 0;
+    transition: all 300ms;
 }
 .p2body {
     font-weight: 300;
     font-size: 2rem;
     color: var(--color-primary);
+    transition: all 300ms;
+}
+
+div.p2bottombox:hover{
+    background-color: var(--color-primary);
+}
+
+.p2bottombox:hover .p2text{
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+.p2bottombox:hover .p2body{
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+.p2bottombox:hover .whiten{
+    color: var(--color-secondary);
+    font-weight: 400;
 }
 
 .p2button1{
     margin: 3rem 4rem 0 0;
     float: right;
-}
-.whiten {
-    color: white;
-}
-.bold {
-    font-weight: 600;
 }
 /*Panels (cards) General*/
 /*All of the general settings are here*/
@@ -338,7 +376,7 @@ span.boldlink {
     border-color: var(--color-primary);
     width: 400px;
     height: 617px;
-    margin:auto;
+    margin: auto;
 }
 
 
@@ -362,7 +400,7 @@ span.boldlink {
 
 .panel-bodytext{
     font-size: 2.0rem;
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Roboto', sans-serif, Arial;
     color: var(--color-primary);
     margin-top: 0px;
@@ -403,12 +441,18 @@ span.boldlink {
 }
 
 .center {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .p3 {
-    margin-bottom: 100px;
     width: 100vw;
     height: 100vh;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+ html {
+     scroll-behavior: smooth;
+ }
