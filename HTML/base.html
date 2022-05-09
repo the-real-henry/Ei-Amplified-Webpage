@@ -13,11 +13,11 @@
 </head>
 <body>
 
-    <menu class="collapsible menu">
+    <menu class="collapsible menu" id="navbar">
         <div class="collapsible__content_2">
             <img src="../Library/Content-Library/image/Menu/menubar.png" alt="menubar" class="menubar">
         </div>
-        <header class="collapsible__header">
+        <header class="collapsible__header" id="navheight">
             <h2 class="menu-title">MENU</h2>
             <img src="../Library/Content-Library/image/Menu/menu-element.png" alt="Arrow" class="menu-element">
         </header>
@@ -61,25 +61,39 @@
             <div class="grid grid--1x2 center p2outerframe">
                 <div class="impactfr">
                     <h2 class="p2subtitle">
-                        Our Reach & Impact
+                        Our Reach & <em class="p2highlight p2highlight1"> Impact &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>
                     </h2>
                     <h3 class="p2num">
-                        300+
+                        300<span class="whiten">+</span> 
                     </h3>
-                    <h3 class="p2text">
-                        Student Directly Impacted
-                    </h3>
+                    <div class="p2bottombox">
+                        <img src="../Library/Content-Library/image/Page-2/rectangle.png" alt="Black rectangle" class="p2element">
+                        <h3 class="p2text">
+                            Student Directly Impa<span class="whiten bold">cted</span>
+                        </h3>
+                        <p class="p2body">
+                            With our diverse service offer<span class="whiten bold">ing powered</span><br>
+                            by machine learning and data <span class="whiten bold">science tools</span> 
+                        </p>
+                    </div>
                 </div>
                 <div class="partnerfr">
                     <h2 class="p2subtitle">
-                        Assisting Changes Across
+                        <em class="p2highlight p2highlight2">&nbsp;&nbsp;&nbsp;Assisting Changes</em> Across
                     </h2>
                     <h3 class="p2num">
                         10+
                     </h3>
-                    <h3 class="p2text">
-                        Organisations and Institutions
-                    </h3>
+                    <div class="p2bottombox">
+                        <img src="../Library/Content-Library/image/Page-2/rectangle.png" alt="Black rectangle" class="p2element">
+                        <h3 class="p2text">
+                            Organisations and Institutions
+                        </h3>
+                        <p class="p2body">
+                            With universally good testimonials and great <br> 
+                            result achieved across different issues.
+                        </p>
+                    </div>
                 </div>
             </div>
             <a href="#" class="button p2button1">For Case Study <span class="boldlink"> Click Here</span></a>
@@ -87,7 +101,7 @@
         
     </section>
 
-   <div class="grid grid--1x3 center">
+   <div class="grid grid--1x3 center p3">
         <div class="p3-panel p3-p1">
             <div class="panelbd">
                 <header class="panel-heading">TECH</header>
@@ -117,6 +131,19 @@
         </div>
    </div>
    <script src="../js/main.js"></script>
+   <script>
+       var navbar = document.getElementById("navbar");
+       var menu = document.getElementById("navheight");
+
+       window.onscroll = function(){
+           if(window.pageYOffset >= menu.offsetTop){
+               navbar.classList.add("sticky");
+           }
+           else{
+               navbar.classList.remove('sticky');
+           }
+       }
+   </script>
 </body>
 </html>
 

@@ -115,8 +115,8 @@ span.boldlink {
     opacity: 1;
 }
 
-.collapsible--expanded .collapsible__header {
-    position: inherit;
+.collapsible--expanded .menu {
+    background-color: white;
 }
 
 /*Menu CSS*/
@@ -126,7 +126,6 @@ span.boldlink {
     margin-top: 40px;
     float: left;
     width: 240px;
-    background-color: #fafafa;
 }
 .menu-title {
     font-family: 'Roboto', sans-serif, Arial;
@@ -150,7 +149,7 @@ span.boldlink {
 }
 .menu-button {
     color: var(--color-primary);
-    font-weight: 200;
+    font-weight: 300;
     font-size: 2.1rem;
     padding: 5px 10px 5px 0;
     transition: all 0.3s;
@@ -167,6 +166,11 @@ span.boldlink {
     padding: 0;
 }
 
+.sticky{
+    position:fixed;
+
+}
+
 /*Page 1 block and title construction*/
 .p1 {
     width: 100vw;
@@ -181,7 +185,7 @@ span.boldlink {
     font-size: 9rem;
     font-family: 'Roboto', sans-serif, arial;
     font-style: normal;
-    font-weight: lighter;
+    font-weight: 400;
     text-align: left;
     padding-left: 23%;
     margin: 0 0 14rem 0;
@@ -197,8 +201,8 @@ span.boldlink {
 }
 .Subtitle {
     font-family: 'Roboto', sans-serif, arial;
-    font-size: 2.6rem;
-    font-weight: lighter;
+    font-size: 2.8rem;
+    font-weight: 300;
     padding-left: 23.3%;
     padding-top: 15rem;
     margin: 0;
@@ -225,7 +229,7 @@ span.boldlink {
     background-image: url(../Library/Content-Library/image/Page-2/bg-ink.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: 30% 0%;
+    background-position: 18% 0%;
 }
 .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -234,30 +238,60 @@ span.boldlink {
     width: 100%;
 }
 .p2subtitle {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
-    margin: 18rem 0 0 0;
+    margin: 11.5rem 0 0 0;
+}
+.p2highlight {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-style: normal;
+}
+.p2highlight1{
+    font-weight: 600;
+}
+.p2highlight2{
+    font-weight: 600;
 }
 .p2num {
-    font-size: 18rem;
+    font-size: 20rem;
     margin: 0;
     text-align: center;
     font-weight: bold;
 }
+.p2bottombox {
+    width: 60%;
+    margin: auto;
+}
+.p2element{
+    float: left;
+    height: 12rem;
+    margin-right: 2rem;
+}
 .p2text{
-    font-size: 2.5rem;
-    font-weight: lighter;
-    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--color-primary);
     margin: 0;
+}
+.p2body {
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--color-primary);
 }
 
 .p2button1{
-    margin: 10rem 4rem 0 0;
+    margin: 3rem 4rem 0 0;
     float: right;
 }
-
+.whiten {
+    color: white;
+}
+.bold {
+    font-weight: 600;
+}
 /*Panels (cards) General*/
 /*All of the general settings are here*/
 
@@ -267,6 +301,7 @@ span.boldlink {
     border-color: var(--color-primary);
     width: 400px;
     height: 617px;
+    margin:auto;
 }
 
 
@@ -332,5 +367,9 @@ span.boldlink {
 
 .center {
     margin: auto;
+}
+
+.p3 {
+    margin-bottom: 100px;
 }
 
